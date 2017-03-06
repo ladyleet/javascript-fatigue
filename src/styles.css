@@ -10,3 +10,20 @@ body {
     font-family: Roboto;
     margin: 0px;
 }
+
+.image-size {
+    height: 300px;
+    width: 300px;
+}
+
+.primary-color {
+    color: #3F51B5!important;
+  }
+
+.center-align {
+    text-align: center;    
+}
+
+.accent-color {
+    color: #FF4081!important;
+}
