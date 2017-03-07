@@ -1,0 +1,17 @@
+<div>
+  <h1 class="accent-color center-align">
+    Frameworks
+  </h1>
+</div>
+<div>
+  <md-grid-list cols="2">
+    <md-grid-tile *ngFor="let framework of frameworks">
+      <md-card>
+        <h3 md-card-title>{{framework.name}}</h3>
+        <md-card-content>
+          <img src="/assets/img/{{framework.image}}" alt="" class="image-size">
+        </md-card-content>
+      </md-card>
+    </md-grid-tile>
+  </md-grid-list>
+</div>
