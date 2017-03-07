@@ -4,16 +4,22 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 import { AppComponent } from './app.component';
+import { routing } from './app.routing';
+import { AboutComponent } from './about/about.component';
+import { FrameworksComponent } from './frameworks/frameworks.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AboutComponent,
+    FrameworksComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule.forRoot()
+    MaterialModule.forRoot(),
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]

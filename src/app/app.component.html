@@ -1,3 +1,28 @@
-<h1>
-  {{title}}
-</h1>
+<md-sidenav-container fullscreen>
+  <md-sidenav #sidenav>
+    <md-toolbar>
+      <span>
+        <button md-button routerLink="/frameworks">
+          Frameworks
+        </button>
+      </span>
+      <md-toolbar-row>
+        <button md-button routerLink="/about">
+          About
+        </button>
+      </md-toolbar-row>
+    </md-toolbar>
+  </md-sidenav>
+  <md-toolbar color="accent">
+  <button md-icon-button (click)="sidenav.toggle()">
+    <md-icon>
+      menu
+    </md-icon>
+  </button>
+  <span>JavaScript Fatigue</span>
+</md-toolbar>
+
+<div class="body-margin">
+  <router-outlet></router-outlet>
+</div>
+</md-sidenav-container>
